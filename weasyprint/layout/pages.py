@@ -722,6 +722,7 @@ def remake_page(index, context, root_box, html):
         next_page_side = None
     blank = ((next_page_side == 'left' and right_page) or
              (next_page_side == 'right' and not right_page))
+    blank = False
     if blank:
         next_page_name = ''
     side = 'right' if right_page else 'left'
